@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iFarooqA007 – Digital CV & Portfolio</title>
+    <meta name="description"
+        content="WordPress Developer & Frontend Engineer – projects, experience, skills, achievements, contact." />
+    <meta property="og:title" content="iFarooqA007 – Digital CV & Portfolio" />
+    <meta property="og:description"
+        content="WordPress Developer & Frontend Engineer – projects, experience, skills, achievements, contact." />
+    <meta name="theme-color" content="#7f1d1d" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./styling.css" />
+
+</head>
+
+<body>
+    <canvas id="matrix" aria-hidden="true"></canvas>
+
+    <header class="sticky">
+        <div class="nav container" role="navigation" aria-label="Primary">
+            <a class="brand" href="#home" aria-label="Go to top">
+                <span class="logo" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" role="img" aria-label="logo">
+                        <path d="M12 2l8 5v10l-8 5-8-5V7l8-5zm0 3.2L7 7.9v8.2l5 2.9 5-2.9V7.9l-5-2.7z" />
+                    </svg>
+                </span>
+                <span>iFarooqA007</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="cta" href="#contact" title="Hire me">Hire Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="home" class="container">
+        <!-- HERO -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div data-reveal>
+                <p class="section-sub" style="margin-bottom:4px">WordPress Developer • Frontend Engineer</p>
+                <h1 id="hero-title">Hi, I’m <span
+                        style="background:linear-gradient(135deg, var(--brand), var(--brand-2)); -webkit-background-clip:text; background-clip:text; color:transparent">Farooq
+                        Azam</span>.</h1>
+                <p class="typing" aria-live="polite">I build <span id="typing"></span></p>
+                <p>I specialize in scalable WordPress and frontend stacks (HTML, CSS/SCSS, Tailwind, Bootstrap, JS,
+                    PHP). I care about
+                    performance, accessibility, and pixel‑perfect execution.</p>
+                <div class="actions">
+                    <a class="cta" href="#projects" aria-label="See my projects">View Projects</a>
+                    <a class="link" href="./iFarooqA-Resume-pic.pdf" download>Download CV</a>
+                    <a class="link" href="https://github.com/ifarooqa007" target="_blank" rel="noopener">GitHub</a>
+                    <a class="link" href="mailto:farooqroots1773@gmail.com">Email</a>
+                </div>
+                <div class="chips" style="margin-top:14px">
+                    <span class="chip">WordPress</span>
+                    <span class="chip">Elementor</span>
+                    <span class="chip">PHP</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">HTML5</span>
+                    <span class="chip">CSS/SCSS</span>
+                    <span class="chip">Bootstrap</span>
+                    <span class="chip">Tailwind</span>
+                    <span class="chip">React/Angular (Beginner)</span>
+                    <span class="chip">MySQL</span>
+                    <span class="chip">Git • Jira • Slack</span>
+                </div>
+            </div>
+            <aside class="card-hero" data-reveal aria-label="Quick stats">
+                <div class="chips">
+                    <span class="chip">Based in Germany</span>
+                    <span class="chip">Open to Remote</span>
+                    <span class="chip">Freelance & Full-time</span>
+                </div>
+                <div class="stats">
+                    <div class="stat"><b>25+ </b>
+                        <div>Sites Launched</div>
+                    </div>
+                    <div class="stat"><b>5 yrs</b>
+                        <div>Web Experience</div>
+                    </div>
+                    <div class="stat"><b>95+</b>
+                        <div>Core Web Vitals</div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" aria-labelledby="title-about">
+            <h2 class="section-title" id="title-about">About Me</h2>
+            <p class="section-sub">
+                I’m a WordPress developer and frontend engineer with extensive experience in HTML, CSS, JavaScript, PHP,
+                and modern frameworks. I specialize in building high-performance, accessible, and visually compelling
+                websites that drive results for businesses and individuals. My approach combines technical expertise
+                with a keen
+                eye for design, ensuring every project is optimized for speed, usability, and SEO. I thrive in
+                collaborative
+                environments, consistently delivering solutions that exceed client expectations and empower teams to
+                achieve their goals.
+            </p>
+            <div class="grid two" data-reveal>
+                <article class="card">
+                    <h3>What I do</h3>
+                    <p>I build custom WordPress themes, create pixel‑perfect, responsive UIs, and integrate
+                        APIs. Experienced with Elementor, Gutenberg, WooCommerce, and modern frontend stacks.</p>
+                    <div class="chips" style="margin-top:10px">
+                        <span class="chip">Performance Optimization</span>
+                        <span class="chip">SEO Technical</span>
+                        <span class="chip">A/B Testing</span>
+                    </div>
+                </article>
+                <aside class="card">
+                    <h3>Highlights</h3>
+                    <ul style="margin:0; padding-left:18px; color:var(--muted)">
+                        <li>Improved CWV to 95+ on multiple high‑traffic sites</li>
+                        <li>Reusable components & design systems for speed</li>
+                        <li>CI/CD & version control best practices</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" aria-labelledby="title-skills">
+            <h2 class="section-title" id="title-skills">Skills & Technologies</h2>
+            <p class="section-sub">Hover to highlight • counters animate on scroll</p>
+            <div class="grid skills" data-reveal>
+                <article class="card skill" data-skill="WordPress" data-level="95">
+                    <h3>WordPress / Elementor</h3>
+                    <div class="bar" aria-label="WordPress skill meter"><span></span></div>
+                    <small class="percent">0%</small>
+                </article>
+                <article class="card skill" data-skill="JavaScript" data-level="85">
+                    <h3>JavaScript (ES6+)</h3>
+                    <div class="bar"><span></span></div>
+                    <small class="percent">0%</small>
+                </article>
+                <article class="card skill" data-skill="PHP" data-level="88">
+                    <h3>PHP / REST</h3>
+                    <div class="bar"><span></span></div>
+                    <small class="percent">0%</small>
+                </article>
+                <article class="card skill" data-skill="CSS" data-level="92">
+                    <h3>HTML • CSS/SCSS • Tailwind</h3>
+                    <div class="bar"><span></span></div>
+                    <small class="percent">0%</small>
+                </article>
+                <article class="card skill" data-skill="React" data-level="70">
+                    <h3>React</h3>
+                    <div class="bar"><span></span></div>
+                    <small class="percent">0%</small>
+                </article>
+                <article class="card skill" data-skill="MySQL" data-level="78">
+                    <h3>MySQL</h3>
+                    <div class="bar"><span></span></div>
+                    <small class="percent">0%</small>
+                </article>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience" aria-labelledby="title-exp">
+            <h2 class="section-title" id="title-exp">Experience</h2>
+            <p class="section-sub">
+                My expertise lies in building high-performance, scalable WordPress solutions and modern frontend
+                interfaces. I excel at custom theme development, advanced Elementor workflows, and integrating APIs for
+                dynamic functionality. With a strong command of HTML, CSS/SCSS, JavaScript (ES6+), PHP, and frameworks
+                like Tailwind and Bootstrap, I deliver pixel-perfect, accessible, and SEO-optimized websites. I am
+                experienced in performance optimization, Core Web Vitals, and collaborating with cross-functional teams
+                to deliver robust, maintainable web applications.
+            </p>
+            </p>
+            <div class="timeline grid" data-reveal>
+                <article class="card timeline-item">
+                    <div class="role">
+                        <h3>Senior WordPress Developer – Unitedsol Pvt Ltd</h3> <span class="badge">06/2022 –
+                            06/2025</span>
+                        <small> · Islamabad / Pakistan</small><br><br>
+                    </div>
+                    <p style="line-height: 2;">I have crafted and deployed dynamic WordPress websites with custom
+                        features, leveraging HTML, CSS, JavaScript, and Elementor to
+                        deliver engaging and functional experiences. Notable projects
+                        include
+                        <a class="link" href="https://geelyksa.com" target="_blank" rel="noopener">Geely KSA</a>,
+                        <a class="link" href="https://promotions.renaultksa.com" target="_blank" rel="noopener">Renault
+                            KSA Promotions</a>,
+                        <a class="link" href="https://aljerienergy.kinsta.cloud" target="_blank" rel="noopener">Aljeri
+                            Energy</a>,
+                        <a class="link" href="https://pipsc.edu.pk" target="_blank" rel="noopener">PIPSC</a>, and
+                        <a class="link" href="https://vertiasanalytica.ai" target="_blank" rel="noopener">Veritas
+                            Analytica</a>. I also provided ongoing support and optimization for
+                        high-traffic websites such as
+                        <a class="link" href="https://hyundai.com/wallan/en" target="_blank" rel="noopener">Hyundai</a>,
+                        <a class="link" href="https://renault.sa" target="_blank" rel="noopener">Renault Saudi
+                            Arabia</a>,
+                        <a class="link" href="https://geelyksa.com" target="_blank" rel="noopener">Geely KSA</a>,
+                        <a class="link" href="https://icci.com.pk" target="_blank" rel="noopener">ICCI</a>, and
+                        <a class="link" href="https://tehzeeb.com" target="_blank" rel="noopener">Tehzeeb Bakers</a>,
+                        ensuring optimal performance and seamless user experiences. My
+                        role extended to managing CMS platforms for Hyundai and Renault,
+                        focusing on fast performance, regular content updates, and
+                        responsive design. Collaborating closely with designers, content
+                        teams, and backend developers, I delivered scalable and
+                        maintainable web solutions. I actively engaged with clients to
+                        understand their requirements, implement new features, and enhance
+                        UX/UI across various pages. Utilizing tools like Jira and Slack, I
+                        ensured timely project delivery through agile sprint planning,
+                        task tracking, and cross-team collaboration.
+                    </p>
+                </article>
+                <article class="card timeline-item">
+                    <div class="role">
+                        <h3>Web Developer – Keystone Marketing</h3> <span class="badge">01/2022 – 06/2022</span>
+                        <small> · Islamabad / Pakistan</small><br><br>
+                    </div>
+                    <p style="line-height: 2;">
+                        As a web developer, I played a key role in developing and maintaining the company’s website,
+                        leveraging WordPress and utilizing Elementor as the primary builder to create dynamic, visually
+                        appealing, and user-friendly interfaces. My responsibilities included designing and implementing
+                        custom website sections by integrating HTML, CSS, and JavaScript to ensure tailored
+                        functionality and seamless user experiences. Additionally, I focused on optimizing the website’s
+                        SEO, employing best practices to enhance search engine rankings, increase organic traffic, and
+                        improve overall site visibility. Through close attention to detail and a commitment to
+                        delivering high-quality, responsive designs, I ensured the website met both aesthetic and
+                        performance standards while aligning with the company’s goals and user expectations.
+                    </p>
+                </article>
+                <article class="card timeline-item">
+                    <div class="role">
+                        <h3>Associate Software Engineer – Maztechs Pvt Ltd</h3> <span class="badge">04/2021 –
+                            12/2021</span>
+                        <small> · Islamabad / Pakistan</small><br><br>
+                    </div>
+                    <p style="line-height: 2;">
+                        As a web developer, I utilized Django, HTML, CSS, and JavaScript to build responsive and dynamic
+                        websites for the organization, ensuring seamless functionality and an engaging user experience
+                        across various devices. My work encompassed key Django concepts, including environment creation,
+                        view creation, template development, routing, and form validation, to deliver robust and
+                        scalable web applications. Additionally, I integrated MySQL databases with Django applications,
+                        enabling efficient data management and dynamic content delivery. By combining these technologies
+                        and adhering to best practices, I ensured the websites were both visually appealing and
+                        technically sound, meeting the organization’s requirements and enhancing overall user
+                        satisfaction.
+                    </p>
+                </article>
+                <article class="card timeline-item">
+                    <div class="role">
+                        <h3>Software Engineer Intern - Skillsorted Pvt Ltd</h3> <span class="badge">01/2021 –
+                            04/2021</span>
+                        <small> · Islamabad / Pakistan</small><br><br>
+                    </div>
+                    <p style="line-height: 2;">
+                        I have gained hands-on experience in designing and developing responsive websites using HTML,
+                        CSS, and JavaScript, ensuring seamless functionality and cross-browser compatibility across
+                        platforms such as Chrome, Firefox, and Safari. My work focused on creating user-friendly,
+                        visually appealing interfaces that adapt to various devices, including desktops, tablets, and
+                        smartphones, while adhering to web accessibility standards. Additionally, I assisted in building
+                        and maintaining WordPress websites, where I developed custom themes tailored to client
+                        specifications, integrated plugins to enhance site functionality, and optimized performance
+                        through techniques such as image compression, caching, and code minification to improve load
+                        times and user experience.
+                    </p>
+                </article>
+                <article class="card timeline-item">
+                    <div class="role">
+                        <h3>Frontend Intern - Tourism Live LLC</h3> <span class="badge">06/2019 – 08/2019</span>
+                        <small> · Remote / United States</small><br><br>
+                    </div>
+                    <p style="line-height: 2;">
+                        I have gained hands-on experience in designing and developing responsive websites using HTML,
+                        CSS, and JavaScript, ensuring seamless functionality and cross-browser compatibility across
+                        platforms such as Chrome, Firefox, and Safari. My work focused on creating user-friendly,
+                        visually appealing interfaces that adapt to various devices, including desktops, tablets, and
+                        smartphones, while adhering to web accessibility standards. Additionally, I assisted in building
+                        and maintaining WordPress websites, where I developed custom themes tailored to client
+                        specifications, integrated plugins to enhance site functionality, and optimized performance
+                        through techniques such as image compression, caching, and code minification to improve load
+                        times and user experience.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" aria-labelledby="title-projects">
+            <h2 class="section-title" id="title-projects">Projects</h2>
+            <p class="section-sub">
+                Explore a selection of my recent projects below—each highlights my expertise in WordPress, frontend
+                development, and delivering high-performance, accessible solutions for diverse clients. These examples
+                showcase my work on custom themes, interactive UIs, and optimized web experiences. Beyond these featured
+                projects, I have contributed to many more websites and applications, further expanding my portfolio and
+                technical skill set.
+            </p>
+            <div class="grid projects" data-reveal>
+                <article class="card project">
+                    <div class="thumb" aria-hidden="true"><img alt="Geely KSA website" src="./images/Geely.png" />
+                    </div>
+                    <h3>Geely KSA</h3>
+                    <p>Official website for Geely KSA featuring multi-language support, interactive car models, dealer
+                        locator, and custom booking forms. Built for high performance and seamless user experience using
+                        WordPress and custom Elementor widgets.</p>
+                    <div class="links">
+                        <a class="link" href="https://geelyksa.com" target="_blank" rel="noopener">Live</a>
+                        <!-- <a class="link" href="#" target="_blank" rel="noopener">Case Study</a> -->
+                    </div>
+                </article>
+                <article class="card project">
+                    <div class="thumb"><img alt="Renault KSA Promotions" src="./images/Renault-promotion.png" />
+                    </div>
+                    <h3>Renault KSA – Promotions</h3>
+                    <p>Designed and developed the entire frontend from scratch using HTML, CSS, and JavaScript, then
+                        seamlessly integrated with WordPress for dynamic content management. Delivered high-performance,
+                        visually engaging campaign microsites with custom forms, analytics integration, and optimized
+                        landing pages tailored for marketing conversions.</p>
+                    <div class="links">
+                        <a class="link" href="https://promotions.renaultksa.com/" target="_blank"
+                            rel="noopener">Live</a>
+                        <!-- <a class="link" href="#">GitHub</a> -->
+                    </div>
+                </article>
+
+                <article class="card project">
+                    <div class="thumb"><img alt="Aljeri Energy" src="./images/Aljeri-energy.jpg" />
+                    </div>
+                    <h3>Aljeri Energy</h3>
+                    <p>Developed a modern, responsive website for Aljeri Energy, featuring custom WordPress theme
+                        development, interactive service pages, and seamless integration with Elementor. Focused on
+                        performance optimization, accessibility (WCAG compliance), and user-friendly CMS for easy
+                        content management by editors.
+                    </p>
+                    <div class="links">
+                        <a class="link" href="https://aljerienergy.kinsta.cloud/" target="_blank"
+                            rel="noopener">Live</a>
+                        <!-- <a class="link" href="#">GitHub</a> -->
+                    </div>
+                </article>
+
+                <article class="card project">
+                    <div class="thumb"><img alt="Wallan Holding" src="./images/Wallan-trading.jpg" />
+                    </div>
+                    <h3>Wallan Holding</h3>
+                    <p>Developed the official website for Wallan Holding, a leading Saudi conglomerate, using a custom
+                        WordPress theme and Elementor. Implemented multi-language support, dynamic content modules, and
+                        interactive business unit showcases. Focused on accessibility (WCAG compliance), performance
+                        optimization, and seamless CMS management for editors.
+                    </p>
+                    <div class="links">
+                        <a class="link" href="https://wallanholding.kinsta.cloud/" target="_blank"
+                            rel="noopener">Live</a>
+                        <!-- <a class="link" href="#">GitHub</a> -->
+                    </div>
+                </article>
+                <article class="card project">
+                    <div class="thumb"><img alt="PIPSC" src="./images/pipsc.jpg" />
+                    </div>
+                    <h3>PIPSC</h3>
+                    <p>
+                        Developed the official website for Pakistan International Public School & College (PIPSC) using
+                        WordPress and Elementor. Implemented a modern, responsive design with dynamic content sections
+                        for admissions, news, and events. Integrated custom forms, optimized site performance, and
+                        ensured accessibility for students, parents, and staff. The project highlights my ability to
+                        deliver scalable, user-friendly educational platforms tailored to institutional needs.
+                    </p>
+                    <div class="links">
+                        <a class="link" href="https://pipsc.edu.pk/" target="_blank" rel="noopener">Live</a>
+
+                        <!-- <a class="link" href="#">GitHub</a> -->
+                    </div>
+                </article>
+                <article class="card project">
+                    <div class="thumb"><img alt="Varitas Analytica" src="./images/Veritas-analytica.jpg" />
+                    </div>
+                    <h3>Varitas Analytica</h3>
+                    <p>Corporate website for Veritas Analytica, a data analytics firm, built with a custom WordPress
+                        theme
+                        and Elementor. Features include interactive service showcases, case studies, and team profiles.
+                        Emphasized performance optimization, SEO best practices, and a user-friendly CMS for easy
+                        content
+                        updates by the client.
+                    </p>
+                    <div class="links">
+                        <a class="link" href="https://veritasanalytica.ai/" target="_blank" rel="noopener">Live</a>
+
+                        <!-- <a class="link" href="#">GitHub</a> -->
+                    </div>
+                </article>
+                <article class="card project">
+                    <div class="thumb"><img alt="Islamabad Chamber of Commerce" src="./images/icci.jpg" />
+                    </div>
+                    <h3>Islamabad Chamber of Commerce</h3>
+                    <p>Redesigned and developed the ICCI website using a custom WordPress theme and Elementor,
+                        focusing on a modern, responsive design. Implemented features such as event management, news
+                        updates, and member directories. Prioritized performance optimization, SEO enhancements, and
+                        accessibility compliance to improve user experience for members and visitors.
+                    </p>
+                    <div class="links">
+                        <a class="link" href="https://icci.com.pk/" target="_blank" rel="noopener">Live</a>
+
+                        <!-- <a class="link" href="#">GitHub</a> -->
+                    </div>
+                </article>
+
+
+                <article class="card project">
+                    <div class="thumb"><img alt="Archive Technologies" src="./images/archive-tech.jpg" />
+                    </div>
+                    <h3>Archive Technologies</h3>
+                    <p>
+                        Developed a professional website for Archive Technologies, a tech solutions provider, using a
+                        custom WordPress theme and Elementor. The site features service overviews, client testimonials,
+                        and a blog section. Focused on performance optimization, SEO best practices, and ensuring a
+                        user-friendly CMS for easy content management by the client.
+                    </p>
+                    <div class="links">
+                        <a class="link" href="https://archivetechnologies.com.pk/" target="_blank"
+                            rel="noopener">Live</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" aria-labelledby="title-edu">
+            <h2 class="section-title" id="title-edu">Education</h2>
+            <div class="grid skills" data-reveal>
+                <article class="card">
+                    <h3>BS Computer Science - 2016 to 2020</h3>
+                    <p>Ghulam Ishaq Khan Institute of Engineering Sciences and Technology - Sawabi, Pakistan</p>
+                </article>
+                <article class="card">
+                    <h3>A LEVELS - 2014 to 2016</h3>
+                    <p>Roots College International - Islamabad, Pakistan </p>
+                </article>
+                <article class="card">
+                    <h3>O LEVELS - 2012 to 2014</h3>
+                    <p>Edwardes College School - Peshawar, Pakistan </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section id="certifications" aria-labelledby="title-certs">
+            <h2 class="section-title" id="title-certs">Certifications</h2>
+            <div class="grid skills" data-reveal>
+                <article class="card">
+                    <h3>Meta - Coursera</h3>
+                    <ul style="margin: 0 ;padding: 0 0 0 12px;">
+                        <li>
+                            <p>HTML & CSS in Depth </p>
+                        </li>
+                        <li>
+                            <p> Intro to Front-End Development</p>
+                        </li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>University of Michigan - Coursera</h3>
+                    <ul style="margin: 0 ;padding: 0 0 0 12px;">
+                        <li>
+                            <p>nteractivity with JavaScript </p>
+                        </li>
+                        <li>
+                            <p>Building Web Applications in Django</p>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Coursera</h3>
+                    <ul style="margin: 0 ;padding: 0 0 0 12px;">
+                        <li>
+                            <p>Introduction to Relational Database and SQL </p>
+                        </li>
+                    </ul>
+
+                </article>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS -->
+        <section id="achievements" aria-labelledby="title-ach">
+            <h2 class="section-title" id="title-ach">Achievements</h2>
+            <p class="section-sub">Throughout my academic and professional journey, I have consistently demonstrated
+                leadership, initiative, and a commitment to excellence. My achievements span organizing national events,
+                leading technical teams, excelling in international competitions, and earning prestigious awards. These
+                experiences have honed my problem-solving abilities, teamwork, and communication skills, enabling me to
+                deliver impactful results and contribute meaningfully to every role I undertake.</p>
+            <div class="achievements" data-reveal>
+                <div class="ribbon"><strong>Director Operations – GIKI</strong><br>
+                    <small class="muted">As Director Operations at GIKI Mathematics Society, I led a team of 20+ members
+                        to organize a major national event. Managed logistics, delegated responsibilities, and
+                        collaborated closely with other directors to ensure seamless planning and successful
+                        execution.</small>
+                </div>
+                <div class="ribbon"><strong>Director Networking – GIKI</strong><br><small class="muted">As Director
+                        Networking at Netronix Society GIKI, I addressed and managed various internet connectivity
+                        challenges in campus hostels. My responsibilities included troubleshooting network outages,
+                        configuring routers, and providing technical support to residents to maintain stable and
+                        reliable internet access.</small></div>
+                <div class="ribbon"><strong>Vice President - College</strong><br><small class="muted">Roots Sports
+                        Olympiad (2016)
+                        – Led the organizing committee, coordinated logistics, and managed a team to successfully
+                        execute a multi-sport event with high participation and positive feedback.</small></div>
+                <div class="ribbon"><strong>IT Member</strong><br><small class="muted">The Roots Youth Model United
+                        Nation (MUN) is an educational simulation held in 2015, where students role-play as delegates to
+                        the United Nations. Participants research global issues, debate, and draft resolutions,
+                        developing skills in diplomacy, public speaking, and critical thinking. This event encourages
+                        youth engagement in international affairs and fosters leadership qualities.
+                    </small></div>
+                <div class="ribbon"><strong>House Captain and Vice-Captain</strong><br>
+                    <small class="muted">Elected as House Captain and previously Vice-Captain at Edwardes College School
+                        (2012–2014). Led and motivated house members, organized inter-house events, and fostered
+                        teamwork and school spirit through active leadership and community engagement.</small>
+                </div>
+                <div class="ribbon">
+                    <strong>Duke of Edinburgh – Bronze</strong><br>
+                    <small class="muted">
+                        Earned the Bronze Award in The Duke of Edinburgh’s Award Pakistan (2013) at Edwardes College
+                        School. Completed a series of challenges in volunteering, physical activity, skills
+                        development, and adventurous journey, demonstrating commitment, teamwork, and personal
+                        growth during my school years.
+                    </small>
+                </div></small>
+                <div class="ribbon">
+                    <strong>Kangaroo Mathematical Contest</strong><br>
+                    <small class="muted"></small>
+                    Achieved 2nd position in the Kangaroo Mathematical Contest for Khyber Pakhtunkhwa, Pakistan.
+                    Demonstrated strong analytical and problem-solving skills by excelling in a competitive mathematics
+                    examination among top students in the region.
+                    </small>
+                </div>
+                <div class="ribbon">
+                    <strong>2nd Position – Pak-Turk International Mathematical Olympiad</strong><br>
+                    <small class="muted">
+                        Secured 2nd place in the Pak-Turk International Mathematical Olympiad, demonstrating strong
+                        mathematical aptitude and problem-solving skills in a highly competitive, international
+                        environment.
+                    </small>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" aria-labelledby="title-contact">
+            <h2 class="section-title" id="title-contact">Contact</h2>
+            <p class="section-sub">Interested in working together or have a question? Feel free to reach out via email,
+                phone, or WhatsApp. I respond promptly to all inquiries.</p>
+            <div class="card" data-reveal>
+                <div class="contact-list">
+                    <div class="contact-item"><span class="badge">Email</span> <a class="link"
+                            href="mailto:farooqroots1773@gmail.com">farooqroots1773@gmail.com</a></div>
+                    <div class="contact-item"><span class="badge">Phone</span> <a class="link"
+                            href="tel:+4915212152401">+49 152 121 52401</a></div>
+                    <div class="contact-item"><span class="badge">WhatsApp</span> <a class="link"
+                            href="https://wa.me/4915212152401" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" role="contentinfo">
+            <div
+                style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; padding:24px 0; border-top:1px solid rgba(255,255,255,.08); color:var(--muted)">
+                <small>© <span id="year"></span> Farooq Azam. All rights reserved.</small>
+                <small>Built with LoveZ by F.A. Hosted on GitHub Pages.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./jsscript.js">
+
+    </script>
+</body>
+
+</html>
