@@ -1150,7 +1150,7 @@ footer p {
     left: 0;
     right: 0;
     background: var(--bg);
-    padding: 1.5rem 5%;
+    padding: 1.5rem 5%; 
     border-bottom: 1px solid var(--bdr);
     gap: 1.2rem;
     z-index: 99;
